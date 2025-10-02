@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#071627] text-white">
+    <main>
+        <section class="container mx-auto px-4 flex flex-col justify-center items-center relative">
+            <h1 class="text-xl text-center pt-5 font-semibold">Welcome -> <span class="text-[#ff104f] font-bold underline">Tic Tac Toe</span> <- Game</h1>
+
+            <div id="winText" class="h-screen hidden flex flex-col gap-5 justify-center items-center text-xl lg:text-2xl font-medium win-text">
+                <h1 id="mesg"></h1>
+                <button id="newGame" class="bg-[#ff104f] hidden text-white  text-xl px-4 py-2 rounded-md font-bold cursor-pointer">New Game</button>
+            </div>
+            
+            <div class="w-100 h-100 lg:w-115 lg:h-115 mt-10 grid grid-cols-3 items-center justify-center gap-5 text-6xl lg:text-8xl mx-auto" >
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer text-[#ff014f]"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer text-[#ff014f]"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer text-[#ff014f]"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer text-[#ff014f]"></button>
+                <button class="box border size-24 lg:size-32 border-gray-400 rounded-md cursor-pointer"></button>
+            </div>
+            <button id="reset" class="bg-[#ff104f] mt-3 text-white  text-xl px-3 py-1 rounded-md font-bold cursor-pointer">Reset</button>
+            <h1 class="text-sm mt-1 absolute  -bottom-10">Devlope By Asaduzzaman</h1>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
